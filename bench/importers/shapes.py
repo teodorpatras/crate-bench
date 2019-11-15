@@ -8,9 +8,9 @@ class ShapesImporter(BaseImporter):
 
     @property
     def schema(self):
-        return {
-            'shape_id': 'INT primary key',
-            'shape_pt_lat': 'STRING',
-            'shape_pt_lon': 'STRING',
-            'shape_pt_sequence': 'INT'
-        }
+        return """
+            shape_id INT,
+            shape_pt_lat STRING,
+            shape_pt_lon STRING,
+            shape_pt_sequence INT
+        """

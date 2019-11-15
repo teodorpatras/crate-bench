@@ -8,8 +8,8 @@ class CalendarDatesImporter(BaseImporter):
 
     @property
     def schema(self):
-        return {
-            'service_id': 'INT',
-            'date': 'STRING',
-            'exception_type': 'INT'
-        }
+        return """
+            service_id INT,
+            date STRING,
+            exception_type INT
+        """

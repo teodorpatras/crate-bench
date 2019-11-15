@@ -8,13 +8,13 @@ class StopTimesImporter(BaseImporter):
 
     @property
     def schema(self):
-        return {
-            'trip_id': 'INT',
-            'arrival_time': 'STRING',
-            'departure_time': 'STRING',
-            'stop_id': 'STRING',
-            'stop_sequence': 'INT',
-            'pickup_type': 'STRING',
-            'drop_off_type': 'STRING',
-            'stop_headsign': 'STRING'
-        }
+        return """
+            trip_id INT,
+            arrival_time STRING,
+            departure_time STRING,
+            stop_id STRING,
+            stop_sequence INT,
+            pickup_type STRING,
+            drop_off_type STRING,
+            stop_headsign STRING
+        """
