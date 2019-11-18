@@ -31,35 +31,35 @@ Set up your environment and install the dependencies like this:
 
 
  ◎ Importing /Users/teo/crate-bench/fixtures/transfers.txt into 'transfers'...
- ◎ 100963 'transfers' imported in 7.84 seconds!
+ ◎ 100963 'transfers' imported in 10.62 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/agency.txt into 'agencies'...
- ◎ 41 'agencies' imported in 0.06 seconds!
+ ◎ 41 'agencies' imported in 0.1 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/calendar_dates.txt into 'calendar_dates'...
- ◎ 9438 'calendar_dates' imported in 0.83 seconds!
+ ◎ 9438 'calendar_dates' imported in 1.0 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/stop_times.txt into 'stop_times'...
- ◎ 3419699 'stop_times' imported in 196.1 seconds!
+ ◎ 3419699 'stop_times' imported in 184.69 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/frequencies.txt into 'frequencies'...
- ◎ 0 'frequencies' imported in 0.02 seconds!
+ ◎ 0 'frequencies' imported in 0.01 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/shapes.txt into 'shapes'...
- ◎ 4560365 'shapes' imported in 235.05 seconds!
+ ◎ 4560365 'shapes' imported in 192.46 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/trips.txt into 'trips'...
- ◎ 156754 'trips' imported in 5.58 seconds!
+ ◎ 156754 'trips' imported in 7.14 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/stops.txt into 'stops'...
- ◎ 41645 'stops' imported in 2.54 seconds!
+ ◎ 41645 'stops' imported in 2.47 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/calendar.txt into 'calendar'...
- ◎ 1410 'calendar' imported in 0.08 seconds!
+ ◎ 1410 'calendar' imported in 0.13 seconds!
 
  ◎ Importing /Users/teo/crate-bench/fixtures/routes.txt into 'routes'...
- ◎ 1279 'routes' imported in 0.1 seconds!
+ ◎ 1279 'routes' imported in 0.11 seconds!
 
 
-================ AWWW YES! DONE IN 448.2 SECONDS! (⌐■_■) ===============
+================ AWWW YES! DONE IN 398.71 SECONDS! (⌐■_■) ===============
 ```
