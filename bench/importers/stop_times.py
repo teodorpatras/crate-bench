@@ -9,12 +9,12 @@ class StopTimesImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            trip_id INT,
+            trip_id INT NOT NULL,
             arrival_time STRING,
             departure_time STRING,
-            stop_id STRING,
-            stop_sequence INT,
-            pickup_type STRING,
-            drop_off_type STRING,
+            stop_id STRING NOT NULL,
+            stop_sequence INT NOT NULL,
+            pickup_type INT,
+            drop_off_type INT,
             stop_headsign STRING
         """

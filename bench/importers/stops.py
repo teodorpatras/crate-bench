@@ -9,7 +9,7 @@ class StopsImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            stop_id STRING primary key,
+            stop_id STRING PRIMARY KEY,
             stop_code STRING,
             stop_name STRING,
             stop_desc STRING,
@@ -17,7 +17,7 @@ class StopsImporter(BaseImporter):
             stop_lon STRING,
             location_type INT,
             parent_station STRING,
-            wheelchair_boarding STRING,
+            wheelchair_boarding INT,
             platform_code STRING,
             zone_id STRING
         """

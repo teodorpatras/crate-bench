@@ -9,12 +9,12 @@ class TransfersImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            from_stop_id STRING,
-            to_stop_id STRING,
+            from_stop_id STRING NOT NULL,
+            to_stop_id STRING NOT NULL,
             transfer_type INT,
-            min_transfer_time STRING,
+            min_transfer_time INT,
             from_route_id STRING,
             to_route_id STRING,
-            from_trip_id STRING,
-            to_trip_id STRING
+            from_trip_id INT,
+            to_trip_id INT
         """

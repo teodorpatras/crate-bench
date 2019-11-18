@@ -9,7 +9,7 @@ class CalendarDatesImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            service_id INT,
-            date STRING,
-            exception_type INT
+            service_id INT NOT NULL,
+            date STRING NOT NULL,
+            exception_type INT NOT NULL
         """

@@ -1,11 +1,18 @@
 import time
-import csv
 
 
 class BaseImporter:
     def __init__(self, cursor):
         self.cursor = cursor
         super().__init__()
+
+    @property
+    def table_name(self):
+        raise RuntimeError('Must be overridden by subclasses!')
+
+    @property
+    def schema(self):
+        raise RuntimeError('Must be overridden by subclasses!')
 
     def import_file(self, file_path):
         self._create_table()
@@ -35,16 +42,8 @@ class BaseImporter:
 
     def _import_from_file(self, file_path):
         self.cursor.execute("""
-            COPY {} FROM 'file://{}'
+            COPY {} FROM '{}'
             WITH (
                 format = 'csv'
             )
         """.format(self.table_name, file_path))
-
-    @property
-    def table_name(self):
-        raise RuntimeError('Must be overridden by subclasses!')
-
-    @property
-    def schema(self):
-        raise RuntimeError('Must be overridden by subclasses!')

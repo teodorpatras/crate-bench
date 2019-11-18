@@ -9,11 +9,11 @@ class RoutesImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            route_id STRING primary key,
+            route_id STRING PRIMARY KEY,
             agency_id INT,
             route_short_name STRING,
             route_long_name STRING,
-            route_type INT,
+            route_type INT NOT NULL,
             route_color STRING,
             route_text_color STRING,
             route_desc STRING

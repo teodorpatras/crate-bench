@@ -9,9 +9,9 @@ class FrequenciesImporter(BaseImporter):
     @property
     def schema(self):
         return """
-            trip_id INT,
-            start_time STRING,
-            end_time STRING,
-            headway_secs INT,
-            exact_times STRING
+            trip_id INT NOT NULL,
+            start_time STRING NOT NULL,
+            end_time STRING NOT NULL,
+            headway_secs INT NOT NULL,
+            exact_times INT
         """
